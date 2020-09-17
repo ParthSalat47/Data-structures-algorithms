@@ -8,7 +8,7 @@ void toh(int n,char source,char aux,char dest)
     //base case
     if (n == 1)
     {
-        cout << "Moving ring "<< n <<" from "<< source <<" to " << dest<< endl;     //left  ,n,source,dest
+        cout << "Moving ring "<< n <<" from "<< source <<" to " << dest<< endl;     
         return;
     }
     
@@ -16,7 +16,7 @@ void toh(int n,char source,char aux,char dest)
     toh(n-1,source,dest,aux);
     
     //move nth disc from source to dest
-    cout << "Moving ring "<< n <<" from "<< source <<" to " << dest<< endl;     //left  ,n,source,dest
+    cout << "Moving ring "<< n <<" from "<< source <<" to " << dest<< endl;     
     
     //move n-1 discs from aux to dest
     toh(n-1,aux,source,dest);
